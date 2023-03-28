@@ -26,5 +26,6 @@
 #tweet-text {
   height: 30px;
   width: 100%;
-  
+  background-color: #f4f1ec;
+  border: 0;
 }
