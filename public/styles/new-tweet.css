@@ -1,7 +1,6 @@
+
+
 .new-tweet {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: bold;
   color: blue;
 }
@@ -10,7 +9,6 @@
   display: flex;
   justify-content: flex-end;
   font-weight: bold;
-  
 }
 
 .button-tweet {
@@ -27,5 +25,8 @@
   height: 30px;
   width: 100%;
   background-color: #f4f1ec;
-  border: 0;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
 }
+/* No borders but the bottom one, remove the outline when you click on text area */
