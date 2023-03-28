@@ -8,23 +8,28 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Added my google fonts lines 10-12 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
     rel="stylesheet">
+
   <!-- App CSS -->
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-  <!-- Adds font Awesome -->
-  <script src="https://kit.fontawesome.com/ec8829d1d4.js" crossorigin="anonymous"></script>
+
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- App JS -->
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   <script type="text/javascript" src="/scripts/client.js"></script>
 </head>
 
@@ -55,14 +60,24 @@
       <!-- <h2>Compose Tweet</h2> -->
       <form method="POST" action="/tweets">
         <label for="tweet-text">What are you humming about?</label>
-
         <textarea name="text" id="tweet-text"></textarea>
-
         <div class="bottom-tweet">
           <button class="button-tweet" type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
+    </section>
+    <section class="tweet-container">
+      <article>
+        <header class="top-container">
+          <h2>USER</h2>
+          <h2>@handle</h2>
+        </header>
+        <p>tweet here!tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here!  </p>
+        <footer>
+
+        </footer>
+      </article>
     </section>
   </main>
 </body>
