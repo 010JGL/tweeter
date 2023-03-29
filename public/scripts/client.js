@@ -33,7 +33,8 @@ const data = [
     "user": {
       "name": "Descartes",
       "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
+      "handle": "@rd"
+    },
     "content": {
       "text": "Je pense , donc je suis"
     },
@@ -43,7 +44,7 @@ const data = [
 
 $(document).ready(function () {
 
-  const createTweetElement = function (tweetObj) {         
+  const createTweetElement = function (tweetObj) {
     // copy the whole article so we have the same structure for every tweet
     const $tweet = $(`
     <article class="tweet">
@@ -67,9 +68,8 @@ $(document).ready(function () {
     $('.tweet-container').append($tweet);       // Appends our tweet to the parent tweet-container so it shows up on the page
 
   }
-  
 
-  const renderTweets = function(tweets) {
+  const renderTweets = function (tweets) {
     // loops through tweets
     for (let tweet of tweets) {
       // calls createTweetElement for each tweet
@@ -77,5 +77,18 @@ $(document).ready(function () {
     }
   }
   renderTweets(data);
+
+//linking the form, when we click submit, to an event
+  $("form").on("submit", function (event) {    
+    event.preventDefault();                    //preventing to go to page /tweets
+
+    const message = $(this).serialize()         // turn form data into a query string
+
+    $.ajax('/tweets', {
+      type: "POST",
+      data: message,
+      url: '/tweets'
+    })
+  });
 });
 
