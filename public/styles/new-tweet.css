@@ -33,7 +33,7 @@
 /* No borders but the bottom one, remove the outline when you click on text area */
 
 .tweet-container {
-  border: 5px solid blueviolet;
+  border: 5px solid rgb(74, 1, 143);
   height: 300px;
   padding: 15px 15px;
 }
@@ -41,4 +41,45 @@
 .top-container {
   display: flex;
   justify-content: space-between;
+}
+
+.bot-container {
+  border-top: 5px solid rgb(74, 1, 143);
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-right {
+  padding: 5px;
+  display: flex;
+  
+}
+
+.bottom-left {
+  padding: 5px;
+  display: flex;
+}
+
+.fa-flag {
+  padding: 5px;
+}
+.fa-retweet {
+  padding: 5px;
+}
+.fa-heart {
+  padding: 5px;
+}
+.fa-flag:hover {
+
+  color: orangered;
+}
+
+.fa-retweet:hover {
+  padding: 5px;
+  color: orangered;
+}
+
+.fa-heart:hover {
+  padding: 5px;
+  color: orangered;
 }
