@@ -4,6 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+
 const tweetData = {
   "user": {
     "name": "Newton",
@@ -14,7 +15,7 @@ const tweetData = {
     "text": "If I have seen further it is by standing on the shoulders of giants"
   },
   "created_at": 1461116232227
-}
+};
 
 const data = [
   {
@@ -40,7 +41,8 @@ const data = [
     },
     "created_at": 1461113959088
   }
-]
+];
+
 
 $(document).ready(function () {
 
@@ -48,6 +50,7 @@ $(document).ready(function () {
     // copy the whole article so we have the same structure for every tweet
     const $tweet = $(`
     <article class="tweet">
+      <script src="dist/timeago.min.js"></script>
       <header class="top-container">
         <h2><img src=${tweetObj.user.avatars}>${tweetObj.user.name}
         </h2>
@@ -56,7 +59,7 @@ $(document).ready(function () {
       </header>
       <p>${tweetObj.content.text}</p>
       <footer class="bot-container">
-        <p class="bottom-left">${tweetObj.created_at}</span>
+        <p class="bottom-left">${timeago.format(tweetObj.created_at)}</span>
         </p>
           <div class="bottom-right">
             <i class="fa-solid fa-flag"></i>
@@ -76,7 +79,7 @@ $(document).ready(function () {
       createTweetElement(tweet)
     }
   }
-  renderTweets(data);
+  //renderTweets(data);
 
 //linking the form, when we click submit, to an event
   $("form").on("submit", function (event) {    
@@ -89,6 +92,19 @@ $(document).ready(function () {
       data: message,
       url: '/tweets'
     })
+    .then(function (tweet) {
+      loadtweets();
+    })
   });
+
+
+  const loadtweets = function() {
+    $.ajax('/tweets', { method: 'GET'})
+    .then(function (tweet) {
+      renderTweets(tweet)
+      
+    })
+  }
+  loadtweets();
 });
 
