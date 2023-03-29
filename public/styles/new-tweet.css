@@ -15,6 +15,9 @@
 .button-tweet {
   display: flex;
   justify-content: flex-start;
+  background-color: rgb(74, 1, 143);
+  color: white;
+  font-family: 'Bungee', cursive;
 }
 
 .bottom-tweet {
@@ -33,9 +36,14 @@
 /* No borders but the bottom one, remove the outline when you click on text area */
 
 .tweet-container {
-  border: 5px solid rgb(74, 1, 143);
-  height: 300px;
   padding: 15px 15px;
+  
+}
+
+.tweet {
+  padding: 10px 10px;
+  border: 5px solid rgb(74, 1, 143);
+  margin: 25px 0px;
 }
 
 .top-container {
