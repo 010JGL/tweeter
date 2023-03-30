@@ -95,3 +95,19 @@
 .fa-user {
   padding: 5px 5px;
 }
+
+.error {
+  border: 3px solid red;
+  height: 40px;
+  width: 40%;
+  margin: 0 auto;
+  display: none;
+  color: red;
+}
+
+.error-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}

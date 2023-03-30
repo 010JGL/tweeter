@@ -27,10 +27,12 @@
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  
+
   <!-- Timeago -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   <script type="text/javascript" src="/scripts/client.js"></script>
@@ -61,6 +63,9 @@
   <main class="container">
     <!-- Form for tweets -->
     <section class="new-tweet">
+      <div class="error">
+        <p class="error-msg"><i class="fa-solid fa-triangle-exclamation"></i>Tweet has no input or you have exceeded the characters limit<i class="fa-solid fa-triangle-exclamation"></i></p>
+      </div>
       <!-- <h2>Compose Tweet</h2> -->
       <form method="POST" action="/tweets" class="form-tweet">
         <label for="tweet-text">What are you humming about?</label>
@@ -73,43 +78,6 @@
     </section>
     <!-- Tweet container -->
     <section class="tweet-container">
-      <!-- <article class="tweet">
-        <header class="top-container">
-          <h2><i class="fa-solid fa-user"></i>User</h2>
-          <h2>@handle</h2>
-        </header>
-        <p>tweet here!tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here!
-          tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here!
-          tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here!
-          tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! </p>
-        <footer class="bot-container">
-          <p class="bottom-left">DATE HERE!</span></p>
-          <div class="bottom-right">
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </article>
-       Tweet container -->
-      <!-- <article class="tweet">
-        <header class="top-container">
-          <h2><i class="fa-solid fa-user"></i>User</h2>
-          <h2>@handle</h2>
-        </header>
-        <p>tweet here!tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here!
-          tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here!
-          tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here!
-          tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! tweet here! </p>
-        <footer class="bot-container">
-          <p class="bottom-left">DATE HERE!</span></p>
-          <div class="bottom-right">
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </article> -->
     </section>
   </main>
 </body>

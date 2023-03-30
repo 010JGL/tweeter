@@ -99,6 +99,7 @@ $(document).ready(function () {
     const message = $(this).serialize()         // turn form data into a query string
        
     if (message.length > 5 && message.length <= 145) {    // not optimal, need to find improvement
+      $(".error").slideUp();
       $.ajax('/tweets', {
         type: "POST",
         data: message,
@@ -108,7 +109,7 @@ $(document).ready(function () {
         loadtweets();
       })
     } else {
-      alert("No tweet input or too many characters")
+      $(".error").slideDown();
     }
     
   });
