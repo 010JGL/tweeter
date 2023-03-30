@@ -48,9 +48,9 @@ $(document).ready(function () {
 
   const createTweetElement = function (tweetObj) {
     // copy the whole article so we have the same structure for every tweet
+    // line 53 imports timeago in script. for line 63
     const $tweet = $(`
-    <article class="tweet">
-      <script src="dist/timeago.min.js"></script>
+    <article class="tweet"> 
       <header class="top-container">
         <h2><img src=${tweetObj.user.avatars}>${tweetObj.user.name}
         </h2>
@@ -84,17 +84,22 @@ $(document).ready(function () {
 //linking the form, when we click submit, to an event
   $("form").on("submit", function (event) {    
     event.preventDefault();                    //preventing to go to page /tweets
-
     const message = $(this).serialize()         // turn form data into a query string
-
-    $.ajax('/tweets', {
-      type: "POST",
-      data: message,
-      url: '/tweets'
-    })
-    .then(function (tweet) {
-      loadtweets();
-    })
+    //console.log('message.length', message.length)       
+    if (message.length > 5 && message.length <= 145) {    // not optimal, need to find improvement
+      
+      $.ajax('/tweets', {
+        type: "POST",
+        data: message,
+        url: '/tweets'
+      })
+      .then(function (tweet) {
+        loadtweets();
+      })
+    } else {
+    alert("No tweet input or too many characters")
+    }
+    
   });
 
 
