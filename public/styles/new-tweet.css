@@ -1,17 +1,13 @@
 
-
 .new-tweet {
   font-weight: bold;
   color: blue;
 }
-
 .counter {
   display: flex;
   justify-content: flex-end;
   font-weight: bold;
-  
 }
-
 .button-tweet {
   display: flex;
   justify-content: flex-start;
@@ -19,12 +15,10 @@
   color: white;
   font-family: 'Bungee', cursive;
 }
-
 .bottom-tweet {
   display: flex;
   justify-content: space-between;
 }
-
 #tweet-text {
   height: 30px;
   width: 100%;
@@ -34,23 +28,18 @@
   outline: none;
 }
 /* No borders but the bottom one, remove the outline when you click on text area */
-
 .tweet-container {
   padding: 15px 15px;
-  
 }
-
 .tweet {
   padding: 10px 10px;
   border: 5px solid rgb(74, 1, 143);
   margin: 25px 0px;
 }
-
 .top-container {
   display: flex;
   justify-content: space-between;
 }
-
 .bot-container {
   border-top: 5px solid rgb(74, 1, 143);
   margin-top: 30px;
@@ -60,14 +49,11 @@
 .bottom-right {
   padding: 5px;
   display: flex;
-  
 }
-
 .bottom-left {
   padding: 5px;
   display: flex;
 }
-
 .fa-flag {
   padding: 5px;
 }
@@ -78,36 +64,33 @@
   padding: 5px;
 }
 .fa-flag:hover {
-
   color: orangered;
 }
-
 .fa-retweet:hover {
   padding: 5px;
   color: orangered;
 }
-
 .fa-heart:hover {
   padding: 5px;
   color: orangered;
 }
-
 .fa-user {
   padding: 5px 5px;
 }
-
 .error {
   border: 3px solid red;
-  height: 40px;
-  width: 40%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 20px auto;
   display: none;
   color: red;
 }
-
 .error-msg {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
+.text-tweet{
+  overflow-wrap: break-word;
+}
+
+

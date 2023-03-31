@@ -39,13 +39,13 @@
 
 </head>
 
-<body>
+<body class="body">
   <!-- Top nav bar (fixed) -->
   <nav class="header-bar">
     <span>tweeter</span>
     <div class="header-right">
       <p>Write a new tweet</p>
-      <p><i class="fa-solid fa-angles-down" style="color: #be131b;"></i></p>
+      <div class="arrow"><i class="fa-solid fa-angles-down" style="color: #be131b;"></i></div>
     </div>
   </nav>
   <!-- Adding the Avatar and the Name -->
@@ -58,13 +58,13 @@
       <h2>Your Name</h2>
     </div>
   </header>
-
   <!-- Page-specific (main) content here -->
   <main class="container">
     <!-- Form for tweets -->
     <section class="new-tweet">
       <div class="error">
-        <p class="error-msg"><i class="fa-solid fa-triangle-exclamation"></i>Tweet has no input or you have exceeded the characters limit<i class="fa-solid fa-triangle-exclamation"></i></p>
+        <p class="error-msg"><i class="fa-solid fa-triangle-exclamation"></i>Tweet has no input or you have exceeded the
+          characters limit<i class="fa-solid fa-triangle-exclamation"></i></p>
       </div>
       <!-- <h2>Compose Tweet</h2> -->
       <form method="POST" action="/tweets" class="form-tweet">

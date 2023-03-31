@@ -2,7 +2,6 @@ span {
   font-family: 'Bungee', cursive;
   
 }
-
 .header-bar {
   display: flex;
   height: 120px;
@@ -16,17 +15,12 @@ span {
   padding-right: 1.5em;
   position: fixed;
 }
-
 .header-right {
-  
   display: flex;
   justify-content: center;
-
   flex-direction: column;
   align-items: center;
-  
 }
-
 .fa-angles-down {
   display: flex;
   flex-direction: row;

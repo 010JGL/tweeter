@@ -6,5 +6,25 @@
   flex-direction: column;
   align-items: center;
   background-image: url("/images/food.png");
+  background-color: lightslategray;
 }
 
+@media all and (min-width: 1024px) {
+  .body {
+    display: flex; 
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: flex-end;
+    padding: 25px 50px;
+    margin: 120px 0px;
+  }
+}
