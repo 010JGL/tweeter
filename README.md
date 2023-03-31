@@ -22,4 +22,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["Tweeter"](https://github.com/010JGL/tinyapp/blob/master/docs/tinapp.Login.png?raw=true)
+!["Tweeter Desktop"](https://github.com/010JGL/tweeter/blob/master/docs/Tweeter-desktop.png?raw=true);
+!["Tweeter Mobile"](https://github.com/010JGL/tweeter/blob/master/docs/tweeter-mobile.png?raw=true);
+
