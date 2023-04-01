@@ -36,6 +36,9 @@
   border: 5px solid rgb(74, 1, 143);
   margin: 25px 0px;
 }
+.tweet:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
 .top-container {
   display: flex;
   justify-content: space-between;

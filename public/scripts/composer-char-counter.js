@@ -2,7 +2,7 @@
 $(document).ready(function() {
   
   const tweetText = $("#tweet-text");
-  tweetText.on("keyup", function() {
+  tweetText.on("keydown", function() {
     const inputLength = Number($(this).val().length);     // this is the element that triggers the event
     const remaining = 140 - inputLength;                  // initial count at 140 - our text area
 
